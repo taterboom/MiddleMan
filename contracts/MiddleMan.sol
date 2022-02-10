@@ -2,6 +2,27 @@
 pragma solidity >=0.4.25 <0.9.0;
 pragma experimental ABIEncoderV2;
 
+// TODO
+// 设计一种数据结构，存储一个个订单，交易双方都可以查询到
+//  1. 交易双方可以获取到相关的订单列表
+//  2. 可以获取到某个订单
+
+// TODO
+// 退款
+//  谁可以执行退款？
+//  买方/卖方/owner？
+
+// TODO
+// 手续费功能，owner如何取走盈利
+//  接受amount * 1.004
+//  确认amount * 1.004 / 1.004
+//  确认时存一下手续费
+//  给个接口取出手续费
+
+// TODO
+// 一些人免除手续费
+//  维护一个白名单
+
 contract MiddleMan {
     struct Order {
         // 订单类型
